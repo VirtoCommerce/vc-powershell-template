@@ -1,2 +1,52 @@
-# vc-powershell-template
-Powershell script for creating Virto Commerce module solution
+# VC module template
+
+## Overview
+
+This script is a lite version of [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates)
+The script creates a solution template for the VirtoCommerce platform new module. The script automatically creates all the necessary projects:
+
+* Core - Business and Application Models
+* Data - Data Access and Implementation of business logic
+* Tests - xUnit Unit tests
+* Web - API Controllers
+
+and names the folders in accordance with the rules used in the VirtoCommerce development team.
+
+Difference between the script and [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates):
+
+* script does not contain template projects for module extensions:
+  * Cart and Order Module extension
+  * Pricing Module extension
+  * Customer Module extension
+* script does not contain Admin UI interfaces for the module being created.
+
+## How to use template
+
+1. Download this repository as a ZIP file
+2. Unpack ZIP file to a new empty directory
+3. Open Windows PowerShell CMD
+4. Navigate to script directory in Windows PowerShell CMD
+5. Run command:
+
+```command
+.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Ivan Ivanov" -CompanyName VirtoCommerce -PlatformVersion "2.13.52" -CoreModuleVersion "2.25.29"
+```
+
+where `-ModuleName` your module name, `-Author` your name and `-CompanyName` your company name. This command will replace constants with their values in all files.
+
+6. `PlatformVersion` and `CoreModuleVersion` parameters have "2.13.52" "2.25.29" default values respectively. You can skip this parameters if you use default Platform and CoreModule versions
+
+## License
+
+Copyright (c) Virto Solutions LTD.  All rights reserved.
+
+Licensed under the Virto Commerce Open Software License (the "License"); you
+may not use this file except in compliance with the License. You may
+obtain a copy of the License at
+
+<http://virtocommerce.com/opensourcelicense>
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied.

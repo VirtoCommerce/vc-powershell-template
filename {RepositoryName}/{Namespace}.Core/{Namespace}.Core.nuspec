@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>{CompanyName}</authors>
+    <owners>{CompanyName}</owners>
+    <licenseUrl>{RepositoryUrl}/raw/master/LICENSE</licenseUrl>
+    <projectUrl>{RepositoryUrl}</projectUrl>
+    <iconUrl>{RepositoryUrl}/raw/master/NuGet/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>{Copyright}</copyright>
+  </metadata>
+</package>
