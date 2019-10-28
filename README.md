@@ -3,16 +3,16 @@
 ## Overview
 
 This script is a lite version of [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates)
-The script creates a solution template for the VirtoCommerce platform new module. The script automatically creates all the necessary projects:
+It generates a new Visual Studio solution for a module in Virto Commerce Platform. The script automatically creates all the necessary projects:
 
 * Core - Business and Application Models
 * Data - Data Access and Implementation of business logic
 * Tests - xUnit Unit tests
 * Web - API Controllers
 
-and names the folders in accordance with the rules used in the VirtoCommerce development team.
+and names the folders in accordance with the rules used by the VirtoCommerce development team.
 
-Difference between the script and [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates):
+Difference between this script and [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates):
 
 * script does not contain template projects for module extensions:
   * Cart and Order Module extension
