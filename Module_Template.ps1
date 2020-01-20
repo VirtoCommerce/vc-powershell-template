@@ -3,8 +3,8 @@
     [string]$ModuleName = "CustomerReviews",
     [string]$Author = "Jon Doe",
     [string]$CompanyName = "VirtoCommerce",
-    [string]$PlatformVersion = "2.13.52",
-    [string]$CoreModuleVersion = "2.25.29"
+    [string]$PlatformVersion = "2.13.56",
+    [string]$CoreModuleVersion = "2.25.32"
 )
 $constants = @{}
 
