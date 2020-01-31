@@ -29,12 +29,12 @@ Difference between this script and [Virto Commerce 2.x Module Templates](https:/
 5. Run command:
 
 ```command
-.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Ivan Ivanov" -CompanyName VirtoCommerce -PlatformVersion "2.13.52" -CoreModuleVersion "2.25.29"
+.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Ivan Ivanov" -CompanyName VirtoCommerce -PlatformVersion "2.13.56" -CoreModuleVersion "2.25.32"
 ```
 
 where `-ModuleName` your module name, `-Author` your name and `-CompanyName` your company name. This command will replace constants with their values in all files.
 
-6. `PlatformVersion` and `CoreModuleVersion` parameters have "2.13.52" "2.25.29" default values respectively. You can skip this parameters if you use default Platform and CoreModule versions
+6. `PlatformVersion` and `CoreModuleVersion` parameters have "2.13.56" "2.25.32" default values respectively. You can skip this parameters if you use default Platform and CoreModule versions
 
 ## License
 
