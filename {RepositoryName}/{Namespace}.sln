@@ -1,14 +1,18 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2002
+# Visual Studio 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Namespace}.Web", "{Namespace}.Web\{Namespace}.Web.csproj", "{WebProjectGuid}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CFC1B42A-2604-4030-BD28-7706B47C6365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Namespace}.Data", "{Namespace}.Data\{Namespace}.Data.csproj", "{DataProjectGuid}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{60C5F34E-58CA-43A7-AFAF-57F20755E996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Namespace}.Tests", "{Namespace}.Tests\{Namespace}.Tests.csproj", "{TestsProjectGuid}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "{Namespace}.Web", "src\{Namespace}.Web\{Namespace}.Web.csproj", "{WebProjectGuid}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Namespace}.Core", "{Namespace}.Core\{Namespace}.Core.csproj", "{CoreProjectGuid}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "{Namespace}.Data", "src\{Namespace}.Data\{Namespace}.Data.csproj", "{DataProjectGuid}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "{Namespace}.Tests", "tests\{Namespace}.Tests\{Namespace}.Tests.csproj", "{TestsProjectGuid}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "{Namespace}.Core", "src\{Namespace}.Core\{Namespace}.Core.csproj", "{CoreProjectGuid}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+    GlobalSection(NestedProjects) = preSolution
+		{WebProjectGuid} = {CFC1B42A-2604-4030-BD28-7706B47C6365}
+		{DataProjectGuid} = {CFC1B42A-2604-4030-BD28-7706B47C6365}
+		{CoreProjectGuid} = {CFC1B42A-2604-4030-BD28-7706B47C6365}
+		{TestsProjectGuid} = {60C5F34E-58CA-43A7-AFAF-57F20755E996}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {SolutionGuid}

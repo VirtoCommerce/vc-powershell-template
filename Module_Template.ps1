@@ -3,8 +3,9 @@
     [string]$ModuleName = "CustomerReviews",
     [string]$Author = "Jon Doe",
     [string]$CompanyName = "VirtoCommerce",
-    [string]$PlatformVersion = "2.13.52",
-    [string]$CoreModuleVersion = "2.25.29"
+    [string]$PlatformVersion = "3.0.0",
+    [string]$CoreModuleVersion = "3.0.0-rc4-0225",
+    [string]$DataModuleVersion = "3.0.0-rc4-0225"
 )
 $constants = @{}
 
@@ -13,6 +14,7 @@ $constants.Author = $Author # Your name
 $constants.CompanyName = $CompanyName # Company name
 $constants.PlatformVersion = $PlatformVersion
 $constants.CoreModuleVersion = $CoreModuleVersion 
+$constants.DataModuleVersion = $DataModuleVersion 
 
 function ConvertTo-KebabCase($str) 
 {
@@ -88,3 +90,6 @@ foreach($item in Get-ChildItem -Path $scriptDir -Recurse -Exclude *.ps1)
         }
     }
 }
+
+$scriptDir = "$($scriptDir)\{RepositoryName}"
+Remove-Item $scriptDir -Force -Recurse

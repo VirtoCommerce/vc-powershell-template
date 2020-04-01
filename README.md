@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script is a lite version of [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates)
+This script is a lite version of [Virto Commerce 3.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates)
 It generates a new Visual Studio solution for a module in Virto Commerce Platform. The script automatically creates all the necessary projects:
 
 * Core - Business and Application Models
@@ -18,7 +18,6 @@ Difference between this script and [Virto Commerce 2.x Module Templates](https:/
   * Cart and Order Module extension
   * Pricing Module extension
   * Customer Module extension
-* script does not contain Admin UI interfaces for the module being created.
 
 ## How to use template
 
@@ -29,12 +28,12 @@ Difference between this script and [Virto Commerce 2.x Module Templates](https:/
 5. Run command:
 
 ```command
-.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Ivan Ivanov" -CompanyName VirtoCommerce -PlatformVersion "2.13.52" -CoreModuleVersion "2.25.29"
+.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Ivan Ivanov" -CompanyName VirtoCommerce -PlatformVersion "3.0.0" -CoreModuleVersion "3.0.0-rc4-0225" -DataModuleVersion "3.0.0-rc4-0225"
 ```
 
 where `-ModuleName` your module name, `-Author` your name and `-CompanyName` your company name. This command will replace constants with their values in all files.
 
-6. `PlatformVersion` and `CoreModuleVersion` parameters have "2.13.52" "2.25.29" default values respectively. You can skip this parameters if you use default Platform and CoreModule versions
+6. `PlatformVersion` and `CoreModuleVersion` parameters have "3.0.0" "3.0.0-rc4-0225" default values respectively. You can skip this parameters if you use default Platform and CoreModule versions
 
 ## License
 
