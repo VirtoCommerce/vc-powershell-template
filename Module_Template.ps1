@@ -12,7 +12,7 @@ $constants.ModuleName = $ModuleName # Module name
 $constants.Author = $Author # Your name
 $constants.CompanyName = $CompanyName # Company name
 $constants.PlatformVersion = $PlatformVersion
-$constants.PlatformNuGetPackageVersion = $CoreModuleVersion 
+$constants.PlatformNuGetPackageVersion = $PlatformNuGetPackageVersion
 
 function ConvertTo-KebabCase($str) 
 {
