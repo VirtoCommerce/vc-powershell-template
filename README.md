@@ -33,7 +33,7 @@ Difference between this script and [Virto Commerce 3.x Module Templates](https:/
 
 where `-ModuleName` your module name, `-Author` your name and `-CompanyName` your company name. This command will replace constants with their values in all files.
 
-6. `PlatformVersion` and `PlatformNuGetPackageVersion` parameters have "3.0.0" "3.0.0-rc4-0225" default values respectively. You can skip this parameters if you use default versions
+6. `PlatformVersion` and `PlatformNuGetPackageVersion` parameters have "3.0.0" "3.0.0-rc4-0225" default values respectively. You can skip these parameters if you use default versions
 
 ## License
 
