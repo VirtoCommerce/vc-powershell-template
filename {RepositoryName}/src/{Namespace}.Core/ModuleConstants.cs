@@ -26,7 +26,7 @@ namespace {Namespace}.Core
                 public static SettingDescriptor {ModuleId}Enabled = new SettingDescriptor
                 {
                     Name = "{ModuleId}.{ModuleId}Enabled",
-                    GroupName = "Store|General",
+                    GroupName = "{ModuleId}|General",
                     ValueType = SettingValueType.Boolean,
                     DefaultValue = false
                 };
@@ -34,7 +34,7 @@ namespace {Namespace}.Core
                 public static SettingDescriptor {ModuleId}Password = new SettingDescriptor
                 {
                     Name = "{ModuleId}.{ModuleId}Password",
-                    GroupName = "Store|Advanced",
+                    GroupName = "{ModuleId}|Advanced",
                     ValueType = SettingValueType.SecureString,
                     DefaultValue = "qwerty"
                 };

@@ -34,7 +34,7 @@ namespace {Namespace}.Web
             permissionsProvider.RegisterPermissions(ModuleConstants.Security.Permissions.AllPermissions.Select(x =>
                 new Permission()
                 {
-                    GroupName = "{ModuleId}.Web",
+                    GroupName = "{ModuleId}",
                     ModuleId = ModuleInfo.Id,
                     Name = x
                 }).ToArray());
