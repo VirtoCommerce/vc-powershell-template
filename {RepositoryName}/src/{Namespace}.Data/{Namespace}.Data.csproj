@@ -22,7 +22,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="VirtoCommerce.Platform.Data" Version="{DataModuleVersion}" />
+    <PackageReference Include="VirtoCommerce.Platform.Data" Version="{PlatformNuGetPackageVersion}" />
   </ItemGroup>
 
 </Project>

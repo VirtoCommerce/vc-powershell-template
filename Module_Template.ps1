@@ -4,8 +4,7 @@
     [string]$Author = "Jon Doe",
     [string]$CompanyName = "VirtoCommerce",
     [string]$PlatformVersion = "3.0.0",
-    [string]$CoreModuleVersion = "3.0.0-rc4-0225",
-    [string]$DataModuleVersion = "3.0.0-rc4-0225"
+    [string]$PlatformNuGetPackageVersion = "3.0.0-rc4-0225"
 )
 $constants = @{}
 
@@ -13,8 +12,7 @@ $constants.ModuleName = $ModuleName # Module name
 $constants.Author = $Author # Your name
 $constants.CompanyName = $CompanyName # Company name
 $constants.PlatformVersion = $PlatformVersion
-$constants.CoreModuleVersion = $CoreModuleVersion 
-$constants.DataModuleVersion = $DataModuleVersion 
+$constants.PlatformNuGetPackageVersion = $CoreModuleVersion 
 
 function ConvertTo-KebabCase($str) 
 {

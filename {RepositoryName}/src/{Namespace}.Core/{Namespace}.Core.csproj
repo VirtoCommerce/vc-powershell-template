@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="VirtoCommerce.Platform.Core" Version="{CoreModuleVersion}" />
+    <PackageReference Include="VirtoCommerce.Platform.Core" Version="{PlatformNuGetPackageVersion}" />
   </ItemGroup>
 
   <ItemGroup>

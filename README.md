@@ -28,12 +28,12 @@ Difference between this script and [Virto Commerce 3.x Module Templates](https:/
 5. Run command:
 
 ```command
-.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Jon Doe" -CompanyName VirtoCommerce -PlatformVersion "3.0.0" -CoreModuleVersion "3.0.0-rc4-0225" -DataModuleVersion "3.0.0-rc4-0225"
+.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Jon Doe" -CompanyName VirtoCommerce -PlatformVersion "3.0.0" -PlatformNuGetPackageVersion "3.0.0-rc4-0225"
 ```
 
 where `-ModuleName` your module name, `-Author` your name and `-CompanyName` your company name. This command will replace constants with their values in all files.
 
-6. `PlatformVersion` and `CoreModuleVersion` parameters have "3.0.0" "3.0.0-rc4-0225" default values respectively. You can skip this parameters if you use default Platform and CoreModule versions
+6. `PlatformVersion` and `PlatformNuGetPackageVersion` parameters have "3.0.0" "3.0.0-rc4-0225" default values respectively. You can skip this parameters if you use default versions
 
 ## License
 
