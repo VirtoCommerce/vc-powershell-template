@@ -12,7 +12,7 @@ It generates a new Visual Studio solution for a module in Virto Commerce Platfor
 
 and names the folders in accordance with the rules used by the VirtoCommerce development team.
 
-Difference between this script and [Virto Commerce 2.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates):
+Difference between this script and [Virto Commerce 3.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates):
 
 * script does not contain template projects for module extensions:
   * Cart and Order Module extension
@@ -28,7 +28,7 @@ Difference between this script and [Virto Commerce 2.x Module Templates](https:/
 5. Run command:
 
 ```command
-.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Ivan Ivanov" -CompanyName VirtoCommerce -PlatformVersion "3.0.0" -CoreModuleVersion "3.0.0-rc4-0225" -DataModuleVersion "3.0.0-rc4-0225"
+.\Module_Template.ps1 -ModuleName CustomerReviews -Author "Jon Doe" -CompanyName VirtoCommerce -PlatformVersion "3.0.0" -CoreModuleVersion "3.0.0-rc4-0225" -DataModuleVersion "3.0.0-rc4-0225"
 ```
 
 where `-ModuleName` your module name, `-Author` your name and `-CompanyName` your company name. This command will replace constants with their values in all files.
