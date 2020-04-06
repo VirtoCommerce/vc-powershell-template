@@ -19,7 +19,7 @@ namespace {Namespace}.Web
         {
             // database initialization
             var configuration = serviceCollection.BuildServiceProvider().GetRequiredService<IConfiguration>();
-            var connectionString = configuration.GetConnectionString("VirtoCommerce.{ModuleId}.Web") ?? configuration.GetConnectionString("VirtoCommerce");
+            var connectionString = configuration.GetConnectionString("VirtoCommerce.{ModuleId}") ?? configuration.GetConnectionString("VirtoCommerce");
             serviceCollection.AddDbContext<{ModuleId}DbContext>(options => options.UseSqlServer(connectionString));
         }
 
