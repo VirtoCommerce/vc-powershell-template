@@ -1,5 +1,5 @@
 // Call this to register your module to main application
-var moduleName = '{ModuleId}';
+var moduleName = '{JsModuleId}';
 
 if (AppDependencies !== undefined) {
     AppDependencies.push(moduleName);
@@ -9,14 +9,14 @@ angular.module(moduleName, [])
     .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
             $stateProvider
-                .state('workspace.{ModuleId}State', {
-                    url: '/{ModuleId}',
+                .state('workspace.{JsModuleId}State', {
+                    url: '/{JsModuleId}',
                     templateUrl: '$(Platform)/Scripts/common/templates/home.tpl.html',
                     controller: [
                         '$scope', 'platformWebApp.bladeNavigationService', function ($scope, bladeNavigationService) {
                             var newBlade = {
                                 id: 'blade1',
-                                controller: '{ModuleId}.helloWorldController',
+                                controller: '{JsModuleId}.helloWorldController',
                                 template: 'Modules/$({Namespace})/Scripts/blades/hello-world.html',
                                 isClosingDisabled: true
                             };
@@ -30,12 +30,12 @@ angular.module(moduleName, [])
         function (mainMenuService, widgetService, $state) {
             //Register module in main menu
             var menuItem = {
-                path: 'browse/{ModuleId}',
+                path: 'browse/{JsModuleId}',
                 icon: 'fa fa-cube',
-                title: '{ModuleId}',
+                title: '{JsModuleId}',
                 priority: 100,
-                action: function () { $state.go('workspace.{ModuleId}State'); },
-                permission: '{ModuleId}:read'
+                action: function () { $state.go('workspace.{JsModuleId}State'); },
+                permission: '{JsModuleId}:read'
             };
             mainMenuService.addMenuItem(menuItem);
         }

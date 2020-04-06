@@ -1,4 +1,4 @@
-angular.module('{ModuleId}')
-    .factory('{ModuleId}.webApi', ['$resource', function ($resource) {
-        return $resource('api/{ModuleId}');
+angular.module('{JsModuleId}')
+    .factory('{JsModuleId}.webApi', ['$resource', function ($resource) {
+        return $resource('api/{JsModuleId}');
 }]);

@@ -28,6 +28,7 @@ function ConvertTo-KebabCase($str)
 
 $constants.KebabModuleName = ConvertTo-KebabCase $constants.ModuleName
 $constants.ModuleId = "$($constants.ModuleName)Module"
+$constants.JsModuleId = $ModuleId.SubString(0,1).ToLower()+$ModuleId.SubString(1)
 $constants.Namespace = "$($constants.CompanyName).$($constants.ModuleId)"
 $constants.ModuleTitle = "$($constants.CompanyName) $($constants.ModuleName) extension module"
 $constants.CoreProjectDescription = "$($constants.CompanyName) $($constants.ModuleName) extension models and interfaces"

@@ -1,11 +1,11 @@
-angular.module('{ModuleId}')
-    .controller('{ModuleId}.helloWorldController', ['$scope', '{ModuleId}.webApi', function ($scope, api) {
+angular.module('{JsModuleId}')
+    .controller('{JsModuleId}.helloWorldController', ['$scope', '{JsModuleId}.webApi', function ($scope, api) {
         var blade = $scope.blade;
-        blade.title = '{ModuleId}';
+        blade.title = '{JsModuleId}';
 
         blade.refresh = function () {
             api.get(function (data) {
-                blade.title = '{ModuleId}.blades.hello-world.title';
+                blade.title = '{JsModuleId}.blades.hello-world.title';
                 blade.data = data.result;
                 blade.isLoading = false;
             });

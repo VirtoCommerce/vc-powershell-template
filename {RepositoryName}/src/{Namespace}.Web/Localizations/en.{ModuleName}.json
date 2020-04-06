@@ -1,5 +1,5 @@
 {
-  "{ModuleId}": {
+  "{JsModuleId}": {
     "blades": {
       "hello-world": {
         "title": "Hello world blade"
