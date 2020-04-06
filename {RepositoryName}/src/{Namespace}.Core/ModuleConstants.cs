@@ -9,11 +9,11 @@ namespace {Namespace}.Core
         {
             public static class Permissions
             {
-                public const string Create = "{ModuleId}:create";
-                public const string Access = "{ModuleId}:access";
-                public const string Read = "{ModuleId}:read";
-                public const string Update = "{ModuleId}:update";
-                public const string Delete = "{ModuleId}:delete";
+                public const string Create = "{JsModuleId}:create";
+                public const string Access = "{JsModuleId}:access";
+                public const string Read = "{JsModuleId}:read";
+                public const string Update = "{JsModuleId}:update";
+                public const string Delete = "{JsModuleId}:delete";
 
                 public static string[] AllPermissions = { Read, Create, Access, Update, Delete };
             }
