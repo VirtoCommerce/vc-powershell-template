@@ -1,9 +1,28 @@
 {
-  "{JsModuleId}": {
-    "blades": {
-      "hello-world": {
-        "title": "Hello world blade"
-      }
+    "{JsModuleId}": {
+        "blades": {
+            "hello-world": {
+                "title": "Hello world blade"
+            },
+            "permissions": {
+                "{JsModuleId}:access": "Open {ModuleId} menu",
+                "{JsModuleId}:create": "Create {ModuleId} related data",
+                "{JsModuleId}:read": "View {ModuleId} related data",
+                "{JsModuleId}:update": "Update {ModuleId} related data",
+                "{JsModuleId}:delete": "Delete {ModuleId} related data"
+            },
+            "settings": {
+                "{ModuleId}": {
+                    "{ModuleId}Password": {
+                        "title": "{ModuleId} Password",
+                        "description": "{ModuleId} Password setting"
+                    },
+                    "{ModuleId}Enabled": {
+                        "title": "{ModuleId} Enabled",
+                        "description": "{ModuleId} Enabled setting"
+                    }
+                }
+            }
+        }
     }
-  }
 }
