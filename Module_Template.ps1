@@ -3,8 +3,8 @@
     [string]$ModuleName = "CustomerReviews",
     [string]$Author = "Jon Doe",
     [string]$CompanyName = "VirtoCommerce",
-    [string]$PlatformVersion = "2.13.52",
-    [string]$CoreModuleVersion = "2.25.29"
+    [string]$PlatformVersion = "3.0.0",
+    [string]$PlatformNuGetPackageVersion = "3.0.0-rc4-0225"
 )
 $constants = @{}
 
@@ -12,7 +12,7 @@ $constants.ModuleName = $ModuleName # Module name
 $constants.Author = $Author # Your name
 $constants.CompanyName = $CompanyName # Company name
 $constants.PlatformVersion = $PlatformVersion
-$constants.CoreModuleVersion = $CoreModuleVersion 
+$constants.PlatformNuGetPackageVersion = $PlatformNuGetPackageVersion
 
 function ConvertTo-KebabCase($str) 
 {
@@ -28,6 +28,7 @@ function ConvertTo-KebabCase($str)
 
 $constants.KebabModuleName = ConvertTo-KebabCase $constants.ModuleName
 $constants.ModuleId = "$($constants.ModuleName)Module"
+$constants.JsModuleId = $constants.ModuleId.SubString(0,1).ToLower()+$constants.ModuleId.SubString(1)
 $constants.Namespace = "$($constants.CompanyName).$($constants.ModuleId)"
 $constants.ModuleTitle = "$($constants.CompanyName) $($constants.ModuleName) extension module"
 $constants.CoreProjectDescription = "$($constants.CompanyName) $($constants.ModuleName) extension models and interfaces"
@@ -88,3 +89,6 @@ foreach($item in Get-ChildItem -Path $scriptDir -Recurse -Exclude *.ps1)
         }
     }
 }
+
+$scriptDir = "$($scriptDir)\{RepositoryName}"
+Remove-Item $scriptDir -Force -Recurse
