@@ -21,6 +21,10 @@
     <assemblyFile>{Namespace}.Web.dll</assemblyFile>
     <moduleType>{Namespace}.Web.Module, {Namespace}.Web</moduleType>
 
+    <releaseNotes>First version.</releaseNotes>
+    <copyright>Copyright © {Year} {CompanyName}. All rights reserved</copyright>
+    <tags>extension module</tags>
+
 </module>
 
 
