@@ -35,7 +35,7 @@ angular.module(moduleName, [])
                 title: '{JsModuleId}',
                 priority: 100,
                 action: function () { $state.go('workspace.{JsModuleId}State'); },
-                permission: '{JsModuleId}:read'
+                permission: '{JsModuleId}:access'
             };
             mainMenuService.addMenuItem(menuItem);
         }
