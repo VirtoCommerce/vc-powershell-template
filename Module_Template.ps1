@@ -13,6 +13,7 @@ $constants.Author = $Author # Your name
 $constants.CompanyName = $CompanyName # Company name
 $constants.PlatformVersion = $PlatformVersion
 $constants.PlatformNuGetPackageVersion = $PlatformNuGetPackageVersion
+$constants.Year = (Get-Date).year
 
 function ConvertTo-KebabCase($str) 
 {
