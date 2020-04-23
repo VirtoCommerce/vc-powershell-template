@@ -39,6 +39,15 @@ namespace {Namespace}.Web
                     Name = x
                 }).ToArray());
 
+            // Ensure that any pending migrations are applied
+            using (var serviceScope = appBuilder.ApplicationServices.CreateScope())
+            {
+                using (var dbContext = serviceScope.ServiceProvider.GetRequiredService<{ModuleId}DbContext>())
+                {
+                    dbContext.Database.EnsureCreated();
+                    dbContext.Database.Migrate();
+                }
+            }
         }
 
         public void Uninstall()

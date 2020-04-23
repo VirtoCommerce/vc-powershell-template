@@ -9,6 +9,10 @@ namespace {Namespace}.Web.Controllers.Api
     public class {ModuleID}Controller : Controller
     {
         // GET: api/{Namespace}
+        /// <summary>
+        /// Get message
+        /// </summary>
+        /// <remarks>Return "Hello world!" message</remarks>
         [HttpGet]
         [Route("")]
         [Authorize(ModuleConstants.Security.Permissions.Read)]
