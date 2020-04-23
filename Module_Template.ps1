@@ -4,7 +4,7 @@
     [string]$Author = "Jon Doe",
     [string]$CompanyName = "VirtoCommerce",
     [string]$PlatformVersion = "3.0.0",
-    [string]$PlatformNuGetPackageVersion = "3.0.0-rc4-0225"
+    [string]$PlatformNuGetPackageVersion = "3.0.0-rc5-0250"
 )
 $constants = @{}
 

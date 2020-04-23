@@ -15,7 +15,7 @@ namespace {Namespace}.Core
                 public const string Update = "{JsModuleId}:update";
                 public const string Delete = "{JsModuleId}:delete";
 
-                public static string[] AllPermissions = { Read, Create, Access, Update, Delete };
+                public static string[] AllPermissions { get; } = { Read, Create, Access, Update, Delete };
             }
         }
 
@@ -23,7 +23,7 @@ namespace {Namespace}.Core
         {
             public static class General
             {
-                public static SettingDescriptor {ModuleId}Enabled = new SettingDescriptor
+                public static SettingDescriptor {ModuleId}Enabled { get; } = new SettingDescriptor
                 {
                     Name = "{ModuleId}.{ModuleId}Enabled",
                     GroupName = "{ModuleId}|General",
@@ -31,7 +31,7 @@ namespace {Namespace}.Core
                     DefaultValue = false
                 };
 
-                public static SettingDescriptor {ModuleId}Password = new SettingDescriptor
+                public static SettingDescriptor {ModuleId}Password { get; } = new SettingDescriptor
                 {
                     Name = "{ModuleId}.{ModuleId}Password",
                     GroupName = "{ModuleId}|Advanced",
