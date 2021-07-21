@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Project is not a test project -->
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CacheManager.Core, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CacheManager.Core.0.8.0\lib\net45\CacheManager.Core.dll</HintPath>
