@@ -1,19 +1,34 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System.Linq;
 using {Namespace}.Core;
 using {Namespace}.Data.Repositories;
 using VirtoCommerce.Platform.Core.Modularity;
 using VirtoCommerce.Platform.Core.Security;
 using VirtoCommerce.Platform.Core.Settings;
-using System.Linq;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace {Namespace}.Web
 {
     public class Module : IModule
     {
         public ManifestModuleInfo ModuleInfo { get; set; }
+
+        public void Initialize(IServiceCollection serviceCollection)
+        {
+            // initialize DB
+            serviceCollection.AddDbContext<{ModuleId}DbContext> ((provider, options) =>
+            {
+                var configuration = provider.GetRequiredService<IConfiguration>();
+                options.UseSqlServer(configuration.GetConnectionString(ModuleInfo.Id) ?? configuration.GetConnectionString("VirtoCommerce"));
+            });
+
+        // TODO:
+        // serviceCollection.AddTransient<I{ModuleId}Repository, {ModuleId}Repository>();
+        // serviceCollection.AddTransient<Func<I{ModuleId}Repository>>(provider => () => provider.CreateScope().ServiceProvider.GetRequiredService<I{ModuleId}Repository>());
+    }
+
 
         public void Initialize(IServiceCollection serviceCollection)
         {
@@ -54,7 +69,5 @@ namespace {Namespace}.Web
         {
             // do nothing in here
         }
-
     }
-
 }
