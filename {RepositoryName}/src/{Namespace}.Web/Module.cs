@@ -17,21 +17,6 @@ namespace {Namespace}.Web
 
         public void Initialize(IServiceCollection serviceCollection)
         {
-            // initialize DB
-            serviceCollection.AddDbContext<{ModuleId}DbContext> ((provider, options) =>
-            {
-                var configuration = provider.GetRequiredService<IConfiguration>();
-                options.UseSqlServer(configuration.GetConnectionString(ModuleInfo.Id) ?? configuration.GetConnectionString("VirtoCommerce"));
-            });
-
-        // TODO:
-        // serviceCollection.AddTransient<I{ModuleId}Repository, {ModuleId}Repository>();
-        // serviceCollection.AddTransient<Func<I{ModuleId}Repository>>(provider => () => provider.CreateScope().ServiceProvider.GetRequiredService<I{ModuleId}Repository>());
-    }
-
-
-        public void Initialize(IServiceCollection serviceCollection)
-        {
             // database initialization
             var configuration = serviceCollection.BuildServiceProvider().GetRequiredService<IConfiguration>();
             var connectionString = configuration.GetConnectionString("VirtoCommerce.{ModuleId}") ?? configuration.GetConnectionString("VirtoCommerce");
