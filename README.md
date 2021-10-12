@@ -1,5 +1,7 @@
 # VC module template
 
+**Deprecated** Please use [dotnet new template](https://github.com/VirtoCommerce/vc-cli-module-template)
+
 ## Overview
 
 This script is a lite version of [Virto Commerce 3.x Module Templates](https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates)
